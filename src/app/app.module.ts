@@ -11,8 +11,7 @@ import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { BaseComponent } from './components/base/base.component';
 import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
-import { ToolbarModule } from 'primeng/toolbar';
-import { ButtonModule } from 'primeng/button';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToolbarModule,
-    ButtonModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
