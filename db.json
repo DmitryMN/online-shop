@@ -5,6 +5,7 @@
       "title": "macbook pro 15",
       "price": "1200",
       "image": "https://cdn.thewirecutter.com/wp-content/media/2022/08/macbook-2048px-9765.jpg",
+      "year": "2022",
       "configure": {
         "processor": "Apple M11",
         "ssd": "512 GB",
@@ -16,6 +17,7 @@
       "title": "macbook air",
       "price": "780",
       "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661",
+      "year": "2023",
       "configure": {
         "processor": "Apple M11",
         "ssd": "512 GB",
@@ -27,6 +29,7 @@
       "title": "macbook pro 16",
       "price": "1900",
       "image": "https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg",
+      "year": "2022",
       "configure": {
         "processor": "Apple M12",
         "ssd": "1 TB",
