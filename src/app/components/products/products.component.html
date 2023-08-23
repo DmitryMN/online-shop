@@ -4,10 +4,10 @@
             <img src={{product.image}} class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{product.title}}</h5>
-                <p class="card-text">price: {{product.price}}</p>
+                <p class="card-text">price: {{product.price | currency}}</p>
                 <p class="card-text">year: {{product.year}}</p>
                 <button type="button" class="btn btn-secondary">add to basket</button>
-                <button type="button" class="btn btn-secondary">info</button>
+                <button type="button" class="btn btn-secondary" [routerLink]="['/products', product.id]">info</button>
             </div>
         </div>
     </section>
