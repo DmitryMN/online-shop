@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-dialog-box',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dialog-box.component.scss']
 })
 export class DialogBoxComponent {
-
+  constructor(public modalRef?: BsModalRef) { }
 }

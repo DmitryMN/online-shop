@@ -1,4 +1,9 @@
 <div class="container">
+    <nav *ngIf="isEdit" class="navbar navbar-light bg-light">
+        <div class="container-fluid justify-content-end">
+            <button type="button" class="btn btn-secondary me-1" (click)="openModal()">add product</button>
+        </div>
+    </nav>
     <section>
         <div *ngFor="let product of products " class="card" style="width: 18rem;">
             <img src={{product.image}} class="card-img-top" alt="...">

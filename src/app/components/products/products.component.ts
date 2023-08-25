@@ -1,7 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Subscription } from 'rxjs';
 import { IProducts } from 'src/app/models/products';
 import { ProductsService } from 'src/app/services/products.service';
+import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
 
 @Component({
   selector: 'app-products',
@@ -12,8 +14,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   products: IProducts[]
   productSubscription: Subscription
+  isEdit: Boolean = true
+  modalRef: BsModalRef
 
-  constructor(private productService: ProductsService) { }
+  constructor(private productService: ProductsService, public modalService: BsModalService) { }
 
   ngOnInit(): void {
     this.productSubscription = this.productService.getProducts().subscribe((data) => {
@@ -24,5 +28,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if(this.productSubscription) this.productSubscription.unsubscribe();
   }
+
+  openModal() {
+    this.modalRef = this.modalService.show(DialogBoxComponent);
+  }
+
 
 }

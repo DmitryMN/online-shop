@@ -12,7 +12,9 @@ import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { BaseComponent } from './components/base/base.component';
 import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateProductComponent } from './components/create-product/create-product.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BasketComponent,
     ProductDetailsComponent,
     BaseComponent,
-    DialogBoxComponent
+    DialogBoxComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule,
-    HttpClientModule 
+    HttpClientModule,
+    ModalModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
