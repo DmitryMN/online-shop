@@ -15,7 +15,7 @@ export interface IProductsConfig {
 }
 
 export interface IProducts {
-    id: number;
+    id: string;
     title: string;
     price: number;
     image?: string;

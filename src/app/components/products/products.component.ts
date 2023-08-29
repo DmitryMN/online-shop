@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-import { Subscription } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 import { IProducts } from 'src/app/models/products';
 import { ProductsService } from 'src/app/services/products.service';
 import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
@@ -31,6 +31,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   openModal() {
     this.modalRef = this.modalService.show(DialogBoxComponent);
+    this.modalRef.content.onClose = new Subject<IProducts>();
+    this.modalRef.content.onClose.subscribe((result: IProducts) => {
+      console.log(result);
+    })
   }
 
 

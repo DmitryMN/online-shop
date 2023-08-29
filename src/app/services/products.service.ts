@@ -20,4 +20,8 @@ export class ProductsService {
     return this.http.get<IProducts>(`${this.url}/${id}`)
   }
 
+  postProduct(product: IProducts) {
+    return this.http.post<IProducts>(this.url, product)
+  }
+
 }

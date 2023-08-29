@@ -1,4 +1,4 @@
-<form [formGroup]="myForm">
+<form [formGroup]="myForm" (ngSubmit)="submit()">
     <input 
         type="text"
         class="border w-full py-2 px-4 mb-2"
@@ -11,6 +11,32 @@
         class="border w-full py-2 px-4 mb-2"
         placeholder="Product price" 
         formControlName="price"
-        appFocus/>
+    />
+    <input 
+        type="text"
+        class="border w-full py-2 px-4 mb-2"
+        placeholder="Product year" 
+        formControlName="year"
+    />
+    <input 
+        type="text"
+        class="border w-full py-2 px-4 mb-2"
+        placeholder="processor name" 
+        formControlName="processor"
+    />
+    <input 
+        type="text"
+        class="border w-full py-2 px-4 mb-2"
+        placeholder="volume ssd" 
+        formControlName="ssd"
+        appFocus
+    />
+    <input
+        type="text"
+        class="border w-full py-2 px-4 mb-2"
+        placeholder="display"
+        formControlName="display"
+        appFocus
+    />
     <button type="submit" class="py-2 px-4 bg-blue-600 text-white">Add product</button>
 </form>
