@@ -33,7 +33,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.modalRef = this.modalService.show(DialogBoxComponent);
     this.modalRef.content.onClose = new Subject<IProducts>();
     this.modalRef.content.onClose.subscribe((result: IProducts) => {
-      console.log(result);
+      this.productService.postProduct(result).subscribe((prod) => {
+        this.products.push(prod)
+      })
     })
   }
 

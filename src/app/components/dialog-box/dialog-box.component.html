@@ -10,46 +10,53 @@
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
-                placeholder="Product name" 
+                placeholder="Product title" 
                 formControlName="title"
                 appFocus
             />
+            <p class="text-danger" *ngIf="title.errors?.required && title.touched">field is required</p>
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="Product price" 
                 formControlName="price"
             />
+            <p class="text-danger" *ngIf="price.errors?.required && price.touched">image error: {{image.errors}}</p>
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="Set image url" 
                 formControlName="image"
             />
+            <p class="text-danger" *ngIf="image.errors && image.touched">url is failed</p>
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="Product year" 
                 formControlName="year"
             />
+            <p class="text-danger" *ngIf="year.errors?.required && year.touched">field is required</p>
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="processor name" 
                 formControlName="processor"
             />
+            <p class="text-danger" *ngIf="processor.errors?.required && processor.touched">field is required</p>
             <input 
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="volume ssd" 
                 formControlName="ssd"
             />
+            <p class="text-danger" *ngIf="ssd.errors?.required && ssd.touched">field is required</p>
             <input
                 type="text"
                 class="border w-full py-2 px-4 mb-2"
                 placeholder="display"
                 formControlName="display"
             />
+            <p class="text-danger" *ngIf="display.errors?.required && display.touched">field is required</p>
             <button type="submit" class="py-2 px-4 bg-blue-600 text-white">Add product</button>
         </form>
         
