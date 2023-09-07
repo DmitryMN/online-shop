@@ -10,7 +10,8 @@ export class ProductsService {
 
   url = "http://localhost:3000/products"
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+  }
 
   getProducts(): Observable<IProducts[]> {
     return this.http.get<IProducts[]>(this.url)
@@ -24,4 +25,7 @@ export class ProductsService {
     return this.http.post<IProducts>(this.url, product)
   }
 
+  removePost(id: string) {
+    return this.http.delete(`${this.url}/${id}`)
+  }
 }

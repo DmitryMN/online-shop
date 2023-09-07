@@ -5,7 +5,7 @@
         </div>
     </nav>
     <section>
-        <div *ngFor="let product of products " class="card" style="width: 18rem;">
+        <div *ngFor="let product of products" class="card" style="width: 18rem;">
             <img src={{product.image}} class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{product.title}}</h5>
@@ -13,6 +13,7 @@
                 <p class="card-text">year: {{product.year}}</p>
                 <button type="button" class="btn btn-secondary">add to basket</button>
                 <button type="button" class="btn btn-secondary" [routerLink]="['/products', product.id]">info</button>
+                <app-collaps [prodId]="product.id" [removeProd]="removeProduct"></app-collaps>
             </div>
         </div>
     </section>

@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "0",
       "title": "macbook pro 15",
       "price": "1200",
       "image": "https://cdn.thewirecutter.com/wp-content/media/2022/08/macbook-2048px-9765.jpg",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "1",
       "title": "macbook air",
       "price": "780",
       "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661",
@@ -25,19 +25,7 @@
       }
     },
     {
-      "id": 3,
-      "title": "macbook pro 16",
-      "price": "1900",
-      "image": "https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg",
-      "year": "2022",
-      "configure": {
-        "processor": "Apple M12",
-        "ssd": "1 TB",
-        "display": "16'"
-      }
-    },
-    {
-      "id": "Wed Aug 30 2023 10:51:39 GMT+0300 (Москва, стандартное время)",
+      "id": "3",
       "title": "test",
       "price": 1300,
       "image": "https://www.iphones.ru/wp-content/uploads/2019/11/macbook-pro-review-1-small.jpg",
@@ -49,15 +37,15 @@
       }
     },
     {
-      "id": "Wed Aug 30 2023 12:29:05 GMT+0300 (Москва, стандартное время)",
-      "title": "fsfsfssfsdfs",
-      "price": 0,
-      "image": "",
-      "year": "",
+      "id": "1693830876856",
+      "title": "imac",
+      "price": 1500,
+      "image": "https://p.turbosquid.com/ts-thumb/0T/CplMhw/iJHk5p3v/imac_pro_set_01/jpg/1499179277/600x600/fit_q87/d4e4577a5d624414e94cac38f62cc352424ff3ad/imac_pro_set_01.jpg",
+      "year": "2022",
       "configure": {
-        "processor": "",
-        "ssd": "",
-        "display": ""
+        "processor": "i7",
+        "ssd": "1 TB",
+        "display": "21"
       }
     }
   ]

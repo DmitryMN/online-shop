@@ -51,7 +51,7 @@ export class DialogBoxComponent {
 
   submit() {
     const data: IProducts = {
-      id: new Date().toString(),
+      id: Date.now().toString(),
       title: this.myForm.value.title ?? '',
       price: Number(this.myForm.value.price) ?? 0,
       image: this.myForm.value.image ?? '',

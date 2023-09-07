@@ -15,6 +15,8 @@ import { DialogBoxComponent } from './components/dialog-box/dialog-box.component
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateProductComponent } from './components/create-product/create-product.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CollapsComponent } from './components/ui/collaps/collaps.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { CreateProductComponent } from './components/create-product/create-produ
     ProductDetailsComponent,
     BaseComponent,
     DialogBoxComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    CollapsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { CreateProductComponent } from './components/create-product/create-produ
     ModalModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    CollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

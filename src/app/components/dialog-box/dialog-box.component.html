@@ -57,8 +57,7 @@
                 formControlName="display"
             />
             <p class="text-danger" *ngIf="display.errors?.required && display.touched">field is required</p>
-            <button type="submit" class="py-2 px-4 bg-blue-600 text-white">Add product</button>
-        </form>
-        
+            <button type="submit" class="py-2 px-4 bg-blue-600 text-white" [disabled]="myForm.invalid">Add product</button>
+        </form>        
     </div>
 </div>
